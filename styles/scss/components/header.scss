@@ -30,15 +30,15 @@
     @include element('info-container'){
         z-index: 110;
         opacity: 0;
-        display: none;
         position: absolute;
         top: -10px;
         left: -20px;
         right: -20px;
         transition: all 0.5s ease;
+        visibility: hidden;
         @include modifier('active'){
             opacity: 1;
-            display: block;
+            visibility: visible;
           }
     }
     @include element('data-container'){
