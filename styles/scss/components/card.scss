@@ -1,0 +1,79 @@
+@include block('card'){
+        position: relative;
+	    width: 100%;
+        height: auto;
+        padding: 16px 24px;
+        margin: 16px 0;
+        background: $--color-white;
+        color: $--color-black;
+        overflow: hidden;
+        @include element('nav-icon'){
+            opacity: 0;
+            font-size: 16px;
+            color: black;
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            will-change: transform;
+            -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        @include element('title'){
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 4px;
+            @include media-breakpoint-up('md'){
+              font-size: 20px;
+              font-weight: 700;
+            }
+        }
+        @include element('sub'){
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 0.8;
+            margin-bottom: 16px;
+        }
+    
+        @include element('time'){
+            font-size: 12px;
+            font-weight: 500;
+        }
+    
+        @include element('address'){
+            font-size: 14px;
+            font-weight: 500;
+        }
+          &:hover i {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+          button {
+            position: absolute;
+            right: 14px;
+            bottom: 14px;
+            width: 30px;
+            height: 30px;
+            background-color: #2b26c3;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            outline:none;
+            transition: all 0.3s ease;
+            mix-blend-mode: color-burn;
+          }
+          &:hover button {
+            transform: scale(10.5);
+            @include media-breakpoint-up('md'){
+                transform: scale(16.5);
+              }
+          }
+    }
+
+
+    
+
+

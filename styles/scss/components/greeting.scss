@@ -1,0 +1,47 @@
+@include block('greeting'){
+    @include element('title-main'){
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 1.2;
+    }
+    @include element('divider'){
+        border-top: 2px solid $--color-pearly-white-200;
+        border-radius: 1px;
+    }
+
+    @include element('tag-container'){  
+        display: flex; 
+        overflow: hidden;
+        flex-flow: wrap;
+    }
+
+    @include element('tag'){
+        background-color: $--color-violet-200;
+        color: $--color-violet-300;
+        // color: $--color-white;
+        font-size: 12px;
+        padding: 2px 12px;
+        margin: 2px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+
+    @include element('image-circle'){
+        overflow: hidden;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: $--color-violet-200;
+        margin-right: 8px;
+        border: 1px solid $--color-violet-200;
+    }
+    @include element('head-job'){
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    @include element('sub-job'){
+        font-size: 12px;
+        color: $--color-pearly-white-300;
+    }
+}

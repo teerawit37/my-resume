@@ -1,0 +1,10 @@
+@include block('home'){
+    position: relative;
+    font-size: rem(14px);
+    padding: 1rem 0;
+    @include element('title'){
+        font-size: 20px;
+        font-weight: 700;
+    }  
+}
+
