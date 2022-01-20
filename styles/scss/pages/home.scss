@@ -6,5 +6,12 @@
         font-size: 20px;
         font-weight: 700;
     }  
+    @include element('download-link'){
+        display: flex;
+        color: $--color-violet-300;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+    }
 }
 

@@ -121,6 +121,14 @@ export default function Home() {
             />
           ))}
         </section>
+        <section className="mt-4 mb-2">
+          <div className="d-flex justify-content-center">
+            <a className="tk-home__download-link" href='/file/Thirawit_CV.pdf' download>
+            <i className="tk-icon-download me-2" />
+            <div>Download MyCV</div>
+            </a>
+        </div>
+        </section>
       </section>
     </div>
   )
