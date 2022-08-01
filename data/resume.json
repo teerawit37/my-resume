@@ -1,18 +1,25 @@
 {
     "information": {
        "name": "Thirawit Kaeophirom",
-       "position": "Senior Front-end Engineer",
-       "updated": "Updated January 15, 2022",
-       "current": "BluePi Co.,Ltd.",
+       "position": "Software Engineer Lead",
+       "updated": "Updated August 01, 2022",
+       "current": "Siametrics",
        "location": "Bangkok, Thailand",
-       "strengths": ["ReactJS", "NextJS", "VueJS", "NuxtJS", "Javascript", "Typescript", "NodeJS", "CSS", "SCSS", "UX&UI", "Sketch", "Management"],
+       "strengths": ["ReactJS", "NextJS", "VueJS", "NuxtJS", "Javascript", "Typescript", "Python", "FastApi", "Web3", "Rust", "NodeJS", "CSS", "SCSS", "UX&UI", "Sketch", "Management"],
        "greetings": "Hello, I'm Thirawit. I love being creative and challenge, I am searching a job that enhance my skill and experience everyday in term of Product Development Process , Business Process , UX Research Process and duty in Software Development. I like to challenge and i am seeking that feeling."
     },
     "exp": [
         {
+            "position": "Software Engineer Lead",
+            "company": "Siametrics (Atadia)",
+            "period": "April 2022 - Present : 4 month",
+            "address": "Bangkok Metropolitan Area, Thailand",
+            "link": "https://www.atadia.io/"
+        },
+        {
             "position": "Senior Front-end Engineer",
             "company": "BluePi (Thailand) Co.,Ltd.",
-            "period": "Feb 2021 - Present : 1 year",
+            "period": "Feb 2021 - April 2022 : 1.2 year",
             "address": "Bangkok Metropolitan Area, Thailand",
             "link": "https://bluepi-co-ltd.breezy.hr/"
         },
