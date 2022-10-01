@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Thirawit</title>
+        <title>Welcome, nice to meet you.</title>
         <meta name="description" content="My resume" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
