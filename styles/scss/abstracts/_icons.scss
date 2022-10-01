@@ -21,17 +21,11 @@
 .tk-icon-arrow-right:before {
   content: "\61";
 }
-.tk-icon-facebook-square:before {
-  content: "\62";
-}
 .tk-icon-github-square:before {
   content: "\63";
 }
 .tk-icon-envelope:before {
   content: "\64";
-}
-.tk-icon-linkedin-square:before {
-  content: "\65";
 }
 .tk-icon-arrow-left:before {
   content: "\66";
@@ -78,12 +72,6 @@
 .tk-icon-leanpub:before {
   content: "\75";
 }
-.tk-icon-twitter-square:before {
-  content: "\77";
-}
-.tk-icon-twitch:before {
-  content: "\76";
-}
 .tk-icon-phone-square:before {
   content: "\78";
 }
@@ -110,4 +98,19 @@
 }
 .tk-icon-times:before {
   content: "\42";
+}
+.tk-icon-facebook:before {
+  content: "\46";
+}
+.tk-icon-linkedin:before {
+  content: "\62";
+}
+.tk-icon-twitter:before {
+  content: "\65";
+}
+.tk-icon-twitch:before {
+  content: "\76";
+}
+.tk-icon-instagram:before {
+  content: "\77";
 }

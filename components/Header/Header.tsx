@@ -1,42 +1,43 @@
-import Link from 'next/link'
-import React from 'react';
 import Image from 'next/image'
-import me from '../../public/images/itsme.png'
+import logo from '../../public/logo/logo-black.png'
+import ReactTypingEffect from 'react-typing-effect'
 
-const Header = () => {
-    const [isActive, setAcrive] = React.useState<boolean>(false);
-    const handleActive = () => {
-        setAcrive(!isActive);
-        console.log(isActive)
-    }
+
+export type HeaderType = {
+    name: string,
+}
+
+const Header = ({
+    name,
+}: HeaderType) => {
     return (
-        <div className="tk-header">
-            <i onClick={() => handleActive()} className={`${isActive ? 'tk-icon-times' : 'tk-icon-phone'} tk-header__menu-icon`} />
-            <button className={`tk-header__button ${isActive ? 'tk-header__button--active' : ''}`}></button>
-            <div className={`tk-header__info-container ${isActive ? 'tk-header__info-container--active' : ''}`}>
-                <Image
-                    alt="banner"
-                    src={me}
-                    placeholder="blur"
-                    quality={100}
-                />
-                <div className="tk-header__title">CONTACT</div>
-                <div className="tk-header__data-container">
-                    <a href="tel:+66924298797" target="_blank" rel="noreferrer" className="d-flex p-1 tk-header__link">
-                        <i className="tk-icon-phone-square tk-header__icon me-1" />
-                        <div className="tk-header__text">+66 924298797</div>
-                    </a>
-                    <a href="mailto:t-rawit@hotmail.com" target="_blank" rel="noreferrer" className="d-flex p-1 tk-header__link">
-                        <i className="tk-icon-envelope tk-header__icon me-1" />
-                        <div className="tk-header__text">t-rawit@hotmail.com</div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/thirawit-kaeophirom-7937a6b7/" target="_blank" rel="noreferrer" className="d-flex p-1 tk-header__link">
-                        <i className="tk-icon-linkedin-square tk-header__icon me-1" />
-                        <div className="tk-header__text">Linkedin</div>
-                    </a>
+        <section className="tk-header">
+            <div className="mb-3">
+                <div className='d-flex align-items-center'>
+                    <div className="tk-header__logo-container">
+                        <Image
+                            alt="banner"
+                            src={logo}
+                            placeholder="blur"
+                            quality={100}
+                        />
+                    </div>
+
+                    <div className='tk-header__name-container'>
+                        <div className="tk-header__title-main">
+                            {name}
+                        </div>
+                        <div className="tk-header__title-sub mb-1">
+                            <ReactTypingEffect
+                                eraseDelay={1000}
+                                typingDelay={1000}
+                                text={["Frontend Engineer.", "Fullstack Engineer.", "Product Engineer.", "Creative."]}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

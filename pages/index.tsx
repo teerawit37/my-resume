@@ -1,9 +1,11 @@
 import Head from 'next/head'
-import { Greeting, GreetingType } from '../components/Greeting'
+import { Greeting, InfoType } from '../components/Greeting'
 import { Card } from '../components/Card'
 import { Header } from '../components/Header'
 import resumeData from '../data/resume.json';
 import React from 'react';
+import Image from 'next/image'
+import me from '../public/images/itsme.png'
 
 export type JobsType = {
   position: string,
@@ -22,7 +24,7 @@ export type EduType = {
 }
 
 export default function Home() {
-  const [info, setInfo] = React.useState<GreetingType>();
+  const [info, setInfo] = React.useState<InfoType>();
   const [exp, setExp] = React.useState<JobsType[]>([]);
   const [intern, setIntern] = React.useState<JobsType[]>([]);
   const [award, setAward] = React.useState<JobsType[]>([]);
@@ -47,17 +49,36 @@ export default function Home() {
       </Head>
 
       <section className="tk-home">
-        <Header />
-        <Greeting
+        <Header
           name={info ? info.name : ''}
-          position={info ? info.position : ''}
-          updated={info ? info.updated : ''}
-          current={info ? info.current : ''}
-          location={info ? info.location : ''}
-          strengths={info ? info.strengths : []}
-          greetings={info ? info.greetings : ''}
         />
-        <section className="mb-3">
+        <div className='row'>
+          <div className='col-sm-12 col-md-4'>
+            <Image
+              alt="banner"
+              src={me}
+              placeholder="blur"
+              quality={100}
+            />
+          </div>
+          <div className='tk-home__contents col-sm-12 col-md-8'>
+            <Greeting
+              position={info ? info.position : ''}
+              greetings={info ? info.greetings : ''}
+              current={info ? info.current : ''}
+              location={info ? info.location : ''}
+              frontendstr={info ? info.strengths.frontend : []}
+              backendstr={info ? info.strengths.backend : []}
+              web3str={info ? info.strengths.web3 : []}
+              designstr={info ? info.strengths.design : []}
+              softstr={info ? info.strengths.softskill : []}
+
+            />
+          </div>
+        </div>
+
+
+        {/* <section className="mb-3">
           <div className="d-flex">
             <i className="tk-icon-briefcase me-1" />
             <div className="tk-home__title">Experience</div>
@@ -124,11 +145,11 @@ export default function Home() {
         <section className="mt-4 mb-2">
           <div className="d-flex justify-content-center">
             <a className="tk-home__download-link" href='/file/Thirawit_CV.pdf' download>
-            <i className="tk-icon-download me-2" />
-            <div>Download MyCV</div>
+              <i className="tk-icon-download me-2" />
+              <div>Download MyCV</div>
             </a>
-        </div>
-        </section>
+          </div>
+          </section> */}
       </section>
     </div>
   )

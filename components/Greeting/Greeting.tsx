@@ -1,44 +1,76 @@
-import Link from 'next/link'
 import Image from 'next/image'
-import bluepi from '../../public/images/bluepi.png'
+import atadia from '../../public/images/atadia.png'
 
+export type strengthsType = {
+    frontend: string[];
+    backend: string[];
+    web3: string[];
+    design: string[];
+    softskill: string[];
+}
 
 export type GreetingType = {
+    greetings: string,
+    current: string,
+    location: string,
+    position: string,
+    frontendstr: string[],
+    backendstr: string[],
+    web3str: string[],
+    designstr: string[],
+    softstr: string[]
+}
+
+export type InfoType = {
     name: string,
     position: string,
     updated: string,
     current: string,
     location: string,
-    strengths: string[],
     greetings: string,
+    strengths: strengthsType
 }
 
 const Greeting = ({
-    name,
     position,
-    updated,
+    greetings,
     current,
     location,
-    strengths,
-    greetings,
+    frontendstr,
+    backendstr,
+    web3str,
+    designstr,
+    softstr
 }: GreetingType) => {
     return (
         <section className="tk-greeting">
-            <div className="pt-3 mb-3">
+            <div className="mb-2">
                 <div className="tk-greeting__title-main">
-                    {name}
+                    <div className='tk-greeting__arrow' />
+                    <div className='tk-greeting__arrow tk-greeting__arrow--red' />
+                    <div className='tk-greeting__arrow tk-greeting__arrow--last' />
+                    <span>ABOUT ME</span>
                 </div>
-                <div className="tk-greeting__title-main mb-1">{position}</div>
-                <div className="tk-greeting__sub-job mb-3">
-                    {updated}
+                <div className="mb-3">
+                    <code className="tk-greeting__message">{greetings}</code>
                 </div>
-                <div className="row mb-3">
+                <div className="tk-greeting__divider"></div>
+            </div>
+            <div className="mb-2">
+                <div className="tk-greeting__title-main">
+                    <div className='tk-greeting__arrow' />
+                    <div className='tk-greeting__arrow tk-greeting__arrow--red' />
+                    <div className='tk-greeting__arrow tk-greeting__arrow--last' />
+                    <span>CURRENT</span>
+                </div>
+                <div className="tk-greeting__work-title">{position} · Full-time</div>
+                <div className='row mb-3'>
                     <div className="col-6">
-                        <div className="d-flex">
+                        <div className="d-flex align-items-center">
                             <div className="tk-greeting__image-circle">
                                 <Image
                                     alt="banner"
-                                    src={bluepi}
+                                    src={atadia}
                                     placeholder="blur"
                                     quality={100}
                                 />
@@ -49,20 +81,49 @@ const Greeting = ({
                             </div>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 mb-2">
                         <div className="tk-greeting__head-job">LOCATION</div>
                         <div className="tk-greeting__sub-job">{location}</div>
                     </div>
                 </div>
-                <div className="tk-greeting__tag-container mb-3">
-                    {strengths.map((item, index) => (
-                        <div key={index} className="tk-greeting__tag">{item}</div>
-                    ))}
-                </div>
                 <div className="tk-greeting__divider"></div>
             </div>
-            <div className="mb-3">
-                <code>{greetings}</code>
+
+            <div className="tk-greeting__title-main">
+                <div className='tk-greeting__arrow' />
+                <div className='tk-greeting__arrow tk-greeting__arrow--red' />
+                <div className='tk-greeting__arrow tk-greeting__arrow--last' />
+                <span>SKILL</span>
+            </div>
+            <div className="tk-greeting__tag tk-greeting__tag--red">Frontend Skills</div>
+            <div className="tk-greeting__tag-container mb-3">
+                {frontendstr.map((item, index) => (
+                    <div key={index} className="tk-greeting__tag">{item}</div>
+                ))}
+            </div>
+            <div className="tk-greeting__tag tk-greeting__tag--red">Backend Skills</div>
+            <div className="tk-greeting__tag-container mb-3">
+                {backendstr.map((item, index) => (
+                    <div key={index} className="tk-greeting__tag">{item}</div>
+                ))}
+            </div>
+            <div className="tk-greeting__tag tk-greeting__tag--red">Web3 Skills</div>
+            <div className="tk-greeting__tag-container mb-3">
+                {web3str.map((item, index) => (
+                    <div key={index} className="tk-greeting__tag">{item}</div>
+                ))}
+            </div>
+            <div className="tk-greeting__tag tk-greeting__tag--red">Design Skills</div>
+            <div className="tk-greeting__tag-container mb-3">
+                {designstr.map((item, index) => (
+                    <div key={index} className="tk-greeting__tag">{item}</div>
+                ))}
+            </div>
+            <div className="tk-greeting__tag tk-greeting__tag--red">Soft Skills</div>
+            <div className="tk-greeting__tag-container mb-3">
+                {softstr.map((item, index) => (
+                    <div key={index} className="tk-greeting__tag">{item}</div>
+                ))}
             </div>
         </section>
     );

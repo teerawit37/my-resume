@@ -32,7 +32,6 @@ body {
   background-color: $--color-white;
   color: $--color-black;
   overflow-x: hidden; // NOTE : for landing animation
-
   &.lock-screen {
     overflow: hidden;
   }
@@ -55,7 +54,7 @@ p {
 .container {
   position: relative;
   overflow: hidden;
-  background-color: $--color-orange-100;
+  // background-color: $--color-orange-100;
   @include media-breakpoint-only(sm) {
     padding: 0 16px;
   }

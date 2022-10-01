@@ -61,12 +61,12 @@ $--color-blue-200: #0573F3;
 $--color-white: $--color-pearly-white-100;
 $--color-black: $--color-pearly-white-600;
 
-$--color-red: #C8373E;
+$--color-red: #eb4a4c;
 
 $--color-transparent: transparent;
 
 $--color-red-100: #F7E1E2;
-$--color-red-200: #C8373E;
+$--color-red-200: #eb4a4c;
 
 $--color-green-100: #E2EDE6;
 $--color-green-200: #408558;
@@ -203,9 +203,9 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   sm: 540px - $grid-gutter-width,
-  // md: 768px - $grid-gutter-width,
-  // lg: 992px,
-  // xl: 1076px
+  md: 768px - $grid-gutter-width,
+  lg: 992px,
+  xl: 1076px
 );
 
 /**
