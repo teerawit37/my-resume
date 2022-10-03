@@ -69,7 +69,7 @@
     height: 30px;
     background-color: $--color-pearly-white-100;
     border: none;
-    border-radius: 30px;
+    // border-radius: 30px;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
@@ -77,10 +77,10 @@
   }
 
   &:hover button {
-    transform: scale(10.5);
+    transform: scale(10.5) rotate(30deg);
 
     @include media-breakpoint-up('md') {
-      transform: scale(16.5);
+      transform: scale(16.5) rotate(30deg);
     }
   }
 }
