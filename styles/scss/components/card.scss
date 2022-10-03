@@ -5,7 +5,7 @@
   padding: 16px 24px;
   margin: 16px 0;
   margin-right: 16px;
-  background: $--color-red;
+  background: $--color-pearly-white-600;
   color: $--color-pearly-white-200;
   overflow: hidden;
   @include media-breakpoint-up('md'){
@@ -15,7 +15,7 @@
   @include element('nav-icon') {
     opacity: 0;
     font-size: 16px;
-    color: $--color-pearly-white-200;
+    color: $--color-pearly-white-100;
     position: absolute;
     right: 14px;
     bottom: 14px;
@@ -67,13 +67,13 @@
     bottom: 14px;
     width: 30px;
     height: 30px;
-    background-color: #2b26c3;
+    background-color: $--color-pearly-white-100;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: difference;;
   }
 
   &:hover button {
