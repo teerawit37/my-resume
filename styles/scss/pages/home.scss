@@ -35,8 +35,8 @@
 
     /* Optional: show position indicator in red */
     ::-webkit-scrollbar-thumb {
-        @include media-breakpoint-up('md') {
-            background: #FF0000;
+        @include media-breakpoint-up('xs') {
+            background: $--color-red;
         }
     }
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import atadia from '../../public/images/atadia.png'
+import atadia from '../../public/images/atadia.png';
+import { Card } from '../Card';
 
 export type strengthsType = {
     frontend: string[];
@@ -18,7 +19,16 @@ export type GreetingType = {
     backendstr: string[],
     web3str: string[],
     designstr: string[],
-    softstr: string[]
+    softstr: string[],
+    exp: JobsType[]
+}
+
+export type JobsType = {
+    position: string,
+    company: string;
+    period: string;
+    address: string;
+    link: string;
 }
 
 export type InfoType = {
@@ -40,8 +50,13 @@ const Greeting = ({
     backendstr,
     web3str,
     designstr,
-    softstr
+    softstr,
+    exp
 }: GreetingType) => {
+    const handleAfterChange = (e: any) => {
+        console.log(e.index);
+        console.log(e.dir);
+    };
     return (
         <section className="tk-greeting">
             <div className="mb-2">
@@ -86,9 +101,30 @@ const Greeting = ({
                         <div className="tk-greeting__sub-job">{location}</div>
                     </div>
                 </div>
-                <div className="tk-greeting__divider"></div>
+                <div>
+                    <div className="tk-greeting__title-main">
+                        <div className='tk-greeting__arrow' />
+                        <div className='tk-greeting__arrow tk-greeting__arrow--red' />
+                        <div className='tk-greeting__arrow tk-greeting__arrow--last' />
+                        <span>EXP</span>
+                    </div>
+                    <div className="tk-greeting__carousel">
+                        <div className="tk-greeting__viewport">
+                            {exp.map((item, key) => (
+                                <div key={key} className='tk-greeting__slide'>
+                                    <Card
+                                        title={item.position}
+                                        subtitle={item.company}
+                                        period={item.period}
+                                        address={item.address}
+                                        link={item.link}
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <div className="tk-greeting__title-main">
                 <div className='tk-greeting__arrow' />
                 <div className='tk-greeting__arrow tk-greeting__arrow--red' />

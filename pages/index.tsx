@@ -1,19 +1,11 @@
 import Head from 'next/head'
-import { Greeting, InfoType } from '../components/Greeting'
+import { Greeting, InfoType, JobsType } from '../components/Greeting'
 import { Card } from '../components/Card'
 import { Header } from '../components/Header'
 import resumeData from '../data/resume.json';
 import React from 'react';
 import Image from 'next/image'
 import me from '../public/images/itsme.png'
-
-export type JobsType = {
-  position: string,
-  company: string;
-  period: string;
-  address: string;
-  link: string;
-}
 
 export type EduType = {
   school: string,
@@ -72,10 +64,11 @@ export default function Home() {
               web3str={info ? info.strengths.web3 : []}
               designstr={info ? info.strengths.design : []}
               softstr={info ? info.strengths.softskill : []}
-
+              exp={exp}
             />
           </div>
         </div>
+
 
 
         {/* <section className="mb-3">
