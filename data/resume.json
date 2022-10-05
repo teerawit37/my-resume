@@ -18,8 +18,7 @@
                 "Emotion",
                 "Tailwind CSS",
                 "CSS",
-                "Sass",
-                "Scss"
+                "Sass"
             ],
             "backend": [
                 "FastApi",
