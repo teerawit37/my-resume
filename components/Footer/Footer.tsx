@@ -28,6 +28,11 @@ const Footer = () => {
                             <i className="tk-icon-phone" />
                         </div>
                     </a>
+                    <a href='/file/Thirawit_CV.pdf' download>
+                        <div className="tk-footer__icon-container">
+                            <i className="tk-icon-download" />
+                        </div>
+                    </a>
                 </div>
                 <div className="tk-footer__credit">powered by me.</div>
             </div>
