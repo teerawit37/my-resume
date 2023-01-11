@@ -1,8 +1,8 @@
 import { Card } from '../Card';
-import { JobsType } from '../RightInfo';
+import { IExpData } from '../RightInfo';
 
 type MyComponentProps = {
-    data: JobsType[]
+    data: IExpData[]
 };
 
 const Carousel: React.FC<MyComponentProps> = ({
@@ -11,7 +11,7 @@ const Carousel: React.FC<MyComponentProps> = ({
     return (
         <div className="tk-carousel">
             <div className="tk-carousel__viewport">
-                {data.map((item: JobsType, key: number) => (
+                {data.map((item: IExpData, key: number) => (
                     <div key={key} className='tk-carousel__slide'>
                         <Card
                             title={item.position}
