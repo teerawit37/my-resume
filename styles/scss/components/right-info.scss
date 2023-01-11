@@ -1,0 +1,13 @@
+@include block('right-info') {
+
+    @include element('divider') {
+        border-top: 2px solid $--color-pearly-white-200;
+        border-radius: 1px;
+    }
+
+    @include element('message') {
+        font-size: 14px;
+        color: $--color-pearly-white-600;
+    }
+
+}

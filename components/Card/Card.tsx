@@ -1,23 +1,26 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
-export type MyComponentProps = {
-    title: string,
+type MyComponentProps = {
+    title: string;
     subtitle: string;
     link: string;
     period: string;
     address: string;
-}
+};
 
-const Card = ({
+const Card: React.FC<MyComponentProps> = ({
     title,
     subtitle,
     link,
     period,
-    address
-}: MyComponentProps) => {
+    address,
+}) => {
     return (
         <div className="tk-card">
-            <i className={`${link !== '' ? 'tk-icon-arrow-right' : 'tk-icon-angellist'} tk-card__nav-icon`} />
+            <i
+                className={`${link !== '' ? 'tk-icon-arrow-right' : 'tk-icon-angellist'
+                    } tk-card__nav-icon`}
+            />
             <div className="tk-card__title">{title}</div>
             <div className="tk-card__sub">{`at ${subtitle}`}</div>
             <div className="tk-card__time">{period}</div>
@@ -27,6 +30,6 @@ const Card = ({
             </Link>
         </div>
     );
-}
+};
 
 export default Card;

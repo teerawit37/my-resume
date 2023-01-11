@@ -7,21 +7,6 @@
     position: fixed;
     background: $--color-red;
     letter-spacing: 2px;
-    @include element('icon-container'){
-        width: 40px;
-        height: 40px;
-        background-color: $--color-pearly-white-200;
-        color: $--color-pearly-white-600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 4px;
-        cursor: pointer;
-        &:hover {
-            background-color: $--color-pearly-white-600;
-            color: $--color-pearly-white-200;
-        }
-    }
     @include element('credit'){
         font-size: 12px;
         font-weight: 700;

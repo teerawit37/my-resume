@@ -5,51 +5,66 @@
         "updated": "Updated August 01, 2022",
         "current": "Atadia (Siametrics)",
         "location": "Bangkok, Thailand",
-        "strengths": {
-            "frontend": [
-                "ReactJS",
-                "VueJS",
-                "NextJS",
-                "NuxtJS",
-                "ViteJS",
-                "Javascript",
-                "Typescript",
-                "Styled-Components",
-                "Emotion",
-                "Tailwind CSS",
-                "CSS",
-                "Sass"
-            ],
-            "backend": [
-                "FastApi",
-                "FlaskApi",
-                "Python",
-                "NestJS",
-                "ExpressJS",
-                "NodeJS",
-                "GraphQL",
-                "MySQL",
-                "PostgreSQL",
-                "MongoDB"
-            ],
-            "web3": [
-                "Rust",
-                "Anchor",
-                "Solidity"
-            ],
-            "design": [
-                "Sketch",
-                "Figma"
-            ],
-            "softskill": [
-                "Agile",
-                "Self Managment",
-                "Project Management",
-                "Solution Design",
-                "Team Management"
-            ]
-        },
-        "greetings": "Hello, I'm Thirawit. I love being creative and challenge, I am searching a job that enhance my skill and experience everyday in term of Product Development Process, Business Process, UX Research Process and duty in Software Development. I like to challenge and i am seeking that feeling."
+        "strengths": [
+            {
+                "title": "Fontend Skills",
+                "skills": [
+                    "ReactJS",
+                    "VueJS",
+                    "NextJS",
+                    "NuxtJS",
+                    "ViteJS",
+                    "Javascript",
+                    "Typescript",
+                    "Styled-Components",
+                    "Emotion",
+                    "Tailwind CSS",
+                    "CSS",
+                    "Sass"
+                ]
+            },
+            {
+                "title": "Backend Skills",
+                "skills": [
+                    "FastApi",
+                    "FlaskApi",
+                    "Python",
+                    "NestJS",
+                    "ExpressJS",
+                    "NodeJS",
+                    "GraphQL",
+                    "MySQL",
+                    "PostgreSQL",
+                    "MongoDB"
+                ]
+            },
+            {
+                "title": "Web3 Skills",
+                "skills": [
+                    "Rust",
+                    "Anchor",
+                    "Solidity"
+                ]
+            },
+            {
+                "title": "Design Skills",
+                "skills": [
+                    "Sketch",
+                    "Figma"
+                ]
+            },
+            {
+                "title": "Soft Skills",
+                "skills": [
+                    "Agile",
+                    "Self Managment",
+                    "Project Management",
+                    "Solution Design",
+                    "Team Management"
+                ]
+            }
+        ],
+        "greetings": "Hello, my name is Thirawit and I am a highly motivated individual with a passion for creativity and a love for challenges. I am seeking a job that will allow me to continuously improve my skills and gain valuable experience in areas such as product development, business process, user experience research, and software development. I thrive in environments that push me to step out of my comfort zone and I am eager to take on new challenges in order to grow both professionally and personally."
     },
     "exp": [
         {

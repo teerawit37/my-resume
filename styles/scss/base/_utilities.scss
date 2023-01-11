@@ -4,12 +4,15 @@
 .tk-box-shadow-1 {
   box-shadow: $--box-shadow-1;
 }
+
 .tk-box-shadow-2 {
   box-shadow: $--box-shadow-2;
 }
+
 .tk-box-shadow-3 {
   box-shadow: $--box-shadow-3;
 }
+
 .tk-box-shadow-4 {
   box-shadow: $--box-shadow-4;
 }
@@ -20,15 +23,19 @@
 .tk-border-radius-1 {
   border-radius: $--border-radius-1;
 }
+
 .tk-border-radius-2 {
   border-radius: $--border-radius-2;
 }
+
 .tk-border-radius-3 {
   border-radius: $--border-radius-3;
 }
+
 .tk-border-radius-4 {
   border-radius: $--border-radius-4;
 }
+
 .tk-border-radius-h {
   border-radius: $--border-radius-h;
 }
@@ -40,32 +47,41 @@
 .tk-text-primary-1 {
   color: $--color-primary-1;
 }
+
 .tk-text-primary-2 {
   color: $--color-primary-2;
 }
+
 .tk-text-success {
   color: $--color-success;
 }
+
 .tk-text-warning {
   color: $--color-warning;
 }
+
 .tk-text-danger {
   color: $--color-danger;
 }
+
 .tk-text-black {
   color: $--color-black;
 }
+
 .tk-text-white {
   color: $--color-white;
 }
+
 .tk-text-greyscale,
 .tk-text-greyscale-1 {
   color: $--color-greyscale-100;
 }
+
 .tk-text-default,
 .tk-text-greyscale-2 {
   color: $--color-greyscale-400;
 }
+
 .tk-text-none {
   color: $--color-greyscale-600;
 }
@@ -77,41 +93,53 @@
 .tk-bg-primary-1 {
   background-color: $--color-primary-1;
 }
+
 .tk-bg-primary-2 {
   background-color: $--color-primary-2;
 }
+
 .tk-bg-success {
   background-color: $--color-success;
 }
+
 .tk-bg-warning {
   background-color: $--color-warning;
 }
+
 .tk-bg-danger {
   background-color: $--color-danger;
 }
+
 .tk-bg-black {
   background-color: $--color-black;
 }
+
 .tk-bg-white {
   background-color: $--color-white;
 }
+
 .tk-bg-greyscale,
 .tk-bg-greyscale-1 {
   background-color: $--color-greyscale-100;
 }
+
 .tk-bg-greyscale-2 {
   background-color: $--color-greyscale-200;
 }
+
 .tk-bg-greyscale-3 {
   background-color: $--color-greyscale-300;
 }
+
 .tk-bg-default,
 .tk-bg-greyscale-4 {
   background-color: $--color-greyscale-400;
 }
+
 .tk-bg-greyscale-5 {
   background-color: $--color-greyscale-500;
 }
+
 .tk-bg-greyscale-6 {
   background-color: $--color-greyscale-600;
 }
@@ -125,12 +153,14 @@
     @include img-fluid;
   }
 }
+
 // Width and height
 .mw-100 {
   img {
     max-width: 100% !important;
   }
 }
+
 .mh-100 {
   img {
     max-height: 100% !important;
@@ -143,16 +173,19 @@
     min-width: 100vw !important;
   }
 }
+
 .min-vh-100 {
   img {
     min-height: 100vh !important;
   }
 }
+
 .vw-100 {
   img {
     width: 100vw !important;
   }
 }
+
 .vh-100 {
   img {
     height: 100vh !important;
@@ -162,6 +195,21 @@
 /**
  * Font Sizing
  */
+
+.title-main {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  margin-top: 6px;
+
+  @include media-breakpoint-up('md') {
+    margin-top: 0px;
+  }
+}
+
 .p-black {
   font-size: 24px;
   font-weight: 900;
