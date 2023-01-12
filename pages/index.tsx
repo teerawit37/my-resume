@@ -46,7 +46,6 @@ const Home = () => {
               placeholder="blur"
               quality={100}
             />
-            <div></div>
           </div>
           <div className='tk-home__contents col-sm-12 col-md-8'>
             <RightInfo
