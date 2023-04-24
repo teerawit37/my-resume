@@ -1,4 +1,4 @@
-import atadia from '../../public/images/atadia.png';
+import logo from '../../public/images/logo.png';
 import { CurrentSection, ExpSection, GreetingSection, TechStackSection } from '../Section';
 
 export interface IExpData {
@@ -42,7 +42,7 @@ const RightInfo: React.FC<IRightInfoProps> = ({
                 position={position}
                 current={current}
                 location={location}
-                img={atadia}
+                img={logo}
             />
             <ExpSection data={exp} />
             <TechStackSection data={strengths} />
