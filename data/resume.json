@@ -1,9 +1,9 @@
 {
     "information": {
         "name": "Thirawit Kaeophirom",
-        "position": "Software Engineer Lead",
-        "updated": "Updated Jan 11, 2023",
-        "current": "Atadia (Siametrics)",
+        "position": "Technical Team Lead",
+        "updated": "Updated Apr 24, 2023",
+        "current": "Robowealth",
         "location": "Bangkok, Thailand",
         "strengths": [
             {
@@ -68,9 +68,16 @@
     },
     "exp": [
         {
+            "position": "Technical Team Lead",
+            "company": "Robowealth",
+            "period": "Feb 2023 - Present",
+            "address": "Bangkok, Thailand",
+            "link": "https://www.robowealth.co.th/"
+        },
+        {
             "position": "Software Engineer Lead",
             "company": "Atadia (Siametrics)",
-            "period": "April 2022 - Present",
+            "period": "April 2022 - Dec 2022",
             "address": "Bangkok, Thailand",
             "link": "https://www.atadia.io/"
         },
